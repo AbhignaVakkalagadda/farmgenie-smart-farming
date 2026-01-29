@@ -1,0 +1,9 @@
+timestamp,agent,prediction
+2025-06-18T06:34:22.299830,moisture_forecast_agent_daily,254.27
+2025-06-18T06:30:38.877223,moisture_forecast_agent_short,1240.17
+2025-06-18T06:23:25.491356,recovery_agent,22 days
+2025-06-18T06:17:02.676070,crop_health_agent,Healthy 🌱
+2025-06-18T06:05:45.189908,pest_agent,High Risk
+2025-06-18T05:47:33.562792,crop_agent,blackgram
+2025-06-18T05:47:05.746838,crop_agent,blackgram
+2025-06-18T05:44:31.272038,irrigation_agent,0.6343124

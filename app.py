@@ -324,7 +324,8 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown('<h3 class="white-heading">📦 Actions</h3>', unsafe_allow_html=True)
-    run_btn = st.button("🚀 Predict All Agents", use_container_width=True)
+    st.button("🚀 Predict All Agents", width="stretch")
+
 
     st.markdown("---")
     df_logs_sidebar = load_logs_df()

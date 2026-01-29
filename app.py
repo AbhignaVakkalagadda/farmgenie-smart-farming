@@ -272,10 +272,14 @@ def inject_css():
         display: block !important;
         visibility: visible !important;
     }
-
-    section[data-testid="stSidebar"] + div {
-        margin-left: 320px !important;
-    }
+    section[data-testid="stSidebar"] {
+    min-width: 320px !important;
+    max-width: 320px !important;
+    width: 320px !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+}
     </style>
     """, unsafe_allow_html=True)
 

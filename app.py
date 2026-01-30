@@ -34,7 +34,7 @@ except NameError:
     ROOT = os.getcwd()
 DB_PATH = os.path.join(ROOT, "shared_db.sqlite")
 
-BG_PATH = os.path.join(ROOT, "12.jpg")  # your path
+BG_PATH = r"C:\Users\vakka\Downloads\smart_farming_ai_project\smart_farming_ai_project\12.jpg"  # your path
 
 # ---------------------------
 # Helpers (logging / DB)
@@ -259,30 +259,10 @@ def inject_css():
 
     .stDataFrame, .stTable { color: #e9faff !important; background: rgba(0,0,0,0.34) !important; }
     .block-container { padding-top:12px !important; padding-left:18px !important; padding-right:18px !important; }
+    .stApp > div:first-child { max-height:30px; overflow:visible; background:transparent !important; }
+    </style>
     """
     st.markdown(css, unsafe_allow_html=True)
-    st.markdown("""
-    <style>
-    /* FORCE SIDEBAR WIDTH — STREAMLIT CLOUD FIX */
-    section[data-testid="stSidebar"] {
-        min-width: 320px !important;
-        max-width: 320px !important;
-        width: 320px !important;
-        flex-shrink: 0 !important;
-        display: block !important;
-        visibility: visible !important;
-    }
-    section[data-testid="stSidebar"] {
-    min-width: 320px !important;
-    max-width: 320px !important;
-    width: 320px !important;
-    flex-shrink: 0 !important;
-    display: block !important;
-    visibility: visible !important;
-}
-    </style>
-    """, unsafe_allow_html=True)
-
 
 inject_css()
 
@@ -324,8 +304,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown('<h3 class="white-heading">📦 Actions</h3>', unsafe_allow_html=True)
-    st.button("🚀 Predict All Agents", width="stretch")
-
+    run_btn = st.button("🚀 Predict All Agents", use_container_width=True)
 
     st.markdown("---")
     df_logs_sidebar = load_logs_df()

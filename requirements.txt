@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 streamlit
 numpy
 pandas
@@ -6,3 +7,5 @@ joblib
 tensorflow
 keras
 sqlite3
+=======
+>>>>>>> d4dd64fc1133ffdb8ecaeba2118e7b6510bd75d8

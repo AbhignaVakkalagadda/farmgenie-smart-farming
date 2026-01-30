@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 FarmGenie — Stable UI (headings set to white + balloons removed)
 
